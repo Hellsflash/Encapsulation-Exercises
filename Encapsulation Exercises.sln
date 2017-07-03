@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Box", "Class Box\Class Box.csproj", "{B22006AA-BF76-42BD-A387-1EA352CA7115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm", "AnimalFarm\AnimalFarm.csproj", "{51A5886B-40A1-46A8-8D8A-6459E152FF68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B22006AA-BF76-42BD-A387-1EA352CA7115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B22006AA-BF76-42BD-A387-1EA352CA7115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B22006AA-BF76-42BD-A387-1EA352CA7115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A5886B-40A1-46A8-8D8A-6459E152FF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A5886B-40A1-46A8-8D8A-6459E152FF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A5886B-40A1-46A8-8D8A-6459E152FF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A5886B-40A1-46A8-8D8A-6459E152FF68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
