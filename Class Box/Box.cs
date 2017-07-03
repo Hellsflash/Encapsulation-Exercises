@@ -1,4 +1,6 @@
-﻿namespace Class_Box
+﻿using System;
+
+namespace Class_Box
 {
     public class Box
     {
@@ -8,25 +10,46 @@
 
         public Box(double length, double width, double height)
         {
-            this.length = length;
-            this.width = width;
-            this.height = height;
+            this.Length = length;
+            this.Width = width;
+            this.Height = height;
         }
 
-        public int Length
+        public double Length
         {
-            get { return this.Length; }
-            set { this.Length = value; }
+            get { return this.length; }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Length cannot be zero or negative.");
+                }
+                this.length = value;
+            }
         }
-        public int Width
+        public double Width
         {
-            get { return this.Width; }
-            set { this.Width = value; }
+            get { return this.width; }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Width cannot be zero or negative.");
+                }
+                this.width = value;
+            }
         }
-        public int Height
+        public double Height
         {
-            get { return this.Height; }
-            set { this.Height = value; }
+            get { return this.height; }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Height cannot be zero or negative.");
+                }
+                this.height = value;
+            }
         }
 
         public double SurfaceArea(double length, double width, double height)
@@ -43,6 +66,6 @@
         {
             return this.length * this.height * this.width;
         }
-        
+
     }
 }
